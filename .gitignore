@@ -55,3 +55,6 @@ target/
 
 # Intellij IDEA
 .idea
+
+# Database
+db.sqlite3
