@@ -58,3 +58,7 @@ target/
 
 # Database
 db.sqlite3
+
+# Cooking
+cooking/static/cooking/css/site.css
+cooking/static/cooking/css/site.css.map
