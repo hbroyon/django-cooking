@@ -1,1 +1,71 @@
 @import 'reset';
+
+/******************************************************************************
+ * Font faces                                                                 *
+ ******************************************************************************/
+@font-face {
+  font-family: "Calligraphy";
+  src: url("../fonts/odstemplik.otf"),
+  url("../fonts/JandaAsLongAsYouLoveMe.ttf"),
+  url("../fonts/Tangerine_Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+
+///////////////////////////////////////////////////////////////////////////////
+//  Fonts
+///////////////////////////////////////////////////////////////////////////////
+$main-section-font: "Calligraphy";
+
+///////////////////////////////////////////////////////////////////////////////
+//  Colours
+///////////////////////////////////////////////////////////////////////////////
+$gold: #9F913D;
+
+/******************************************************************************
+ * Components                                                                 *
+ ******************************************************************************/
+@import 'components/button';
+@import 'components/navbar';
+
+/******************************************************************************
+ * Content                                                                    *
+ ******************************************************************************/
+.content {
+  position: absolute;
+  top: 64px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/******************************************************************************
+ * Section                                                                    *
+ ******************************************************************************/
+section {
+  position: relative;
+  width: 100%;
+  height: 64px;
+  text-align: center;
+
+  h1 {
+    margin: 0 auto;
+    color: $gold;
+    font-size: 2em;
+    font-family: $main-section-font;
+    line-height: 64px;
+
+    &::before {
+      content: url("../img/decorator.svg");
+      padding-right: 8px;
+    }
+
+    &::after {
+      content: url("../img/decorator.svg");
+      padding-left: 10px;
+    }
+  }
+}

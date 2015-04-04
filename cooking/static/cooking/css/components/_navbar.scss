@@ -1,0 +1,77 @@
+///////////////////////////////////////////////////////////////////////////////
+//  Variables
+///////////////////////////////////////////////////////////////////////////////
+$nav-menu-font: "Roboto";
+$navbar-font: "Calligraphy";
+
+$navbar-colour: #9F913D;
+
+/******************************************************************************
+ * Navigation Bar                                                             *
+ ******************************************************************************/
+header.navbar {
+  position: absolute;
+  border-bottom: 2px solid $navbar-colour;
+  width: 100%;
+  height: 62px;
+
+  > .logo {
+    padding-left: 16px;
+    float: left;
+    height: inherit;
+
+    a {
+      position: relative;
+      height: inherit;
+      top: -22px;
+      color: $navbar-colour;
+      font-family: $navbar-font;
+      font-size: 2.0em;
+      text-align: center;
+      text-decoration: none;
+      overflow: hidden;
+
+      img {
+        position: relative;
+        top: 23px;
+        width: 60px;
+        height: 60px;
+      }
+
+      span {
+        position: relative;
+        top: 2px;
+        line-height: 64px;
+      }
+    }
+  }
+
+  > .navbar-container {
+    padding-right: 16px;
+    overflow: hidden;
+    height: inherit;
+  }
+}
+
+/******************************************************************************
+ * Navigation Menu                                                            *
+ ******************************************************************************/
+.navbar-container > .navbar-menu {
+  position: relative;
+  float: right;
+  line-height: 64px;
+  text-align: center;
+
+  a {
+    padding: 0 8px;
+    font-size: 1.0em;
+    color: $navbar-colour;
+    font-family: $nav-menu-font;
+    text-decoration: none;
+  }
+
+  .button {
+    padding: 8px 16px;
+    color: white;
+  }
+}
